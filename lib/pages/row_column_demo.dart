@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
 
-import './my_card.dart';
+import 'my_card.dart';
+
 class RowColumnDemo extends StatelessWidget {
-  const RowColumnDemo({
-    Key? key,
-  }) : super(key: key);
+  const RowColumnDemo({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.cyan,
-      appBar: AppBar(
-        title: Text('Flutter App'),
-        centerTitle: true,
-      ),
+      // appBar: AppBar(
+      //   title: Text("Flutter App"),
+      //   centerTitle: true,
+      // ),
       body: Center(
         child: Column(
           children: [

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_app12/pages/my_card.dart';
+import 'my_card.dart';
 
 class GridViewDemo extends StatelessWidget {
   const GridViewDemo({Key? key}) : super(key: key);
@@ -9,71 +9,82 @@ class GridViewDemo extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Container(
-          padding: EdgeInsets.fromLTRB(5, 10, 5, 10),
+          padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
           child: GridView.count(
             crossAxisCount: 3,
             crossAxisSpacing: 20,
             mainAxisSpacing: 20,
             children: [
               Container(
-                decoration: BoxDecoration(shape: BoxShape.circle, color: Colors.cyan,),
+                padding: EdgeInsets.all(8),
+                child: Center(
+                  child: MyCard(
+                    title: 'Rust',
+                    subTitle: 'Version 2.0',
+                    icon: Icons.api,
+                  ),
+                ),
+                color: Colors.purple,
+              ),
+              Container(
+                decoration: BoxDecoration(shape: BoxShape.circle, color: Colors.blue),
                 padding: EdgeInsets.all(8),
                 child: Center(
                   child: MyCard(
                     title: 'Flutter',
-                    subTitle: 'Vesion 2.8',
+                    subTitle: 'Version 2.8',
+                    icon: Icons.api,
+                  ),
+                ),
+                // color: Colors.pink,
+              ),
+              Container(
+                decoration: BoxDecoration(shape: BoxShape.rectangle,color: Colors.cyan),
+                padding: EdgeInsets.all(8),
+                child: Center(
+                  child: MyCard(
+                    title: 'Go Lange',
+                    subTitle: 'Version 8',
                     icon: Icons.api,
                   ),
                 ),
                 // color: Colors.cyan,
               ),
               Container(
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),color: Colors.red,),
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(12), color: Colors.orange),
                 padding: EdgeInsets.all(8),
                 child: Center(
                   child: MyCard(
-                    title: 'Flutter',
-                    subTitle: 'Vesion 2.8',
+                    title: 'Reactt native',
+                    subTitle: 'Version 0.66',
                     icon: Icons.api,
                   ),
                 ),
-                // color: Colors.cyan,
+                // color: Colors.orange,
               ),
               Container(
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),color: Colors.red,),
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),color: Colors.red),
                 padding: EdgeInsets.all(8),
                 child: Center(
                   child: MyCard(
                     title: 'Flutter',
-                    subTitle: 'Vesion 2.8',
+                    subTitle: 'Version 2.8',
                     icon: Icons.api,
                   ),
                 ),
-                // color: Colors.cyan,
+                // color: Colors.red,
               ),
               Container(
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),color: Colors.red,),
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(25),color: Colors.blueGrey),
                 padding: EdgeInsets.all(8),
                 child: Center(
                   child: MyCard(
                     title: 'Flutter',
-                    subTitle: 'Vesion 2.8',
+                    subTitle: 'Version 2.8',
                     icon: Icons.api,
                   ),
                 ),
-                // color: Colors.cyan,
-              ),
-              Container(
-                decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),color: Colors.red,),
-                padding: EdgeInsets.all(8),
-                child: Center(
-                  child: MyCard(
-                    title: 'Flutter',
-                    subTitle: 'Vesion 2.8',
-                    icon: Icons.api,
-                  ),
-                ),
-                // color: Colors.cyan,
+                // color: Colors.red,
               ),
             ],
           ),
