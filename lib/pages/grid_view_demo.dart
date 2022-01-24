@@ -28,7 +28,7 @@ class GridViewDemo extends StatelessWidget {
                 // color: Colors.cyan,
               ),
               Container(
-                decoration: BoxDecoration(shape: BoxShape.circle, color: Colors.blue,),
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),color: Colors.red,),
                 padding: EdgeInsets.all(8),
                 child: Center(
                   child: MyCard(
@@ -40,7 +40,7 @@ class GridViewDemo extends StatelessWidget {
                 // color: Colors.cyan,
               ),
               Container(
-                decoration: BoxDecoration(shape: BoxShape.circle, color: Colors.red,),
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),color: Colors.red,),
                 padding: EdgeInsets.all(8),
                 child: Center(
                   child: MyCard(
@@ -52,7 +52,7 @@ class GridViewDemo extends StatelessWidget {
                 // color: Colors.cyan,
               ),
               Container(
-                decoration: BoxDecoration(shape: BoxShape.circle, color: Colors.purple,),
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),color: Colors.red,),
                 padding: EdgeInsets.all(8),
                 child: Center(
                   child: MyCard(
@@ -64,7 +64,7 @@ class GridViewDemo extends StatelessWidget {
                 // color: Colors.cyan,
               ),
               Container(
-                decoration: BoxDecoration(shape: BoxShape.circle, color: Colors.red,),
+                decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),color: Colors.red,),
                 padding: EdgeInsets.all(8),
                 child: Center(
                   child: MyCard(
